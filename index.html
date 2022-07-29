@@ -8,13 +8,22 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
         <!-- this means that when the window is resized and its under the nr of pixels indicated, the navbar will become a hamburger -->
         <div class="container">
             <a href="" class="navbar-brand">Lorem ipsum dolor sit amet.</a>
+        <button 
+         class="navbar-toggler" 
+         type="button" 
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+        <!--adding a class of ms will allign the links to the right-->
                 <li class="nav-item">
                     <a href="#linkone" class="nav-link">Lorem, ipsum dolor.</a></li>
                     <li class="nav-item">
@@ -28,6 +37,35 @@
         </div>
         <!--put the a tag in the container so that between the title and the margin there is a bit of space, there was no margin before-->
     </nav>
+
+    <!-- Showcase-->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <!--doing flexbox, 2 flex items inside-the flexbox- sm is for small screen flex is to toggle flexbox><!-->
+                <div>
+                <h1>
+                    Lorem ipsum <span class="text-warning">dolor sit amet consectetur.</span> 
+                    <!--text warning is yellow, we are changing half of the title in another color-->
+                </h1>
+                <p class="lead my-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consequatur harum ut corrupti atque ullam soluta pariatur, dolores modi accusantium!
+                </p>
+                <button class="btn btn-primary btn-lg">Lorem, ipsum.</button>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block" src="./undraw_Online_art_re_f1pk.png" alt="">
+         </div>
+        </div>
+    </section>
+
+    <!--newsletter-->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Sign up for the newsletter</h3>
+            </div>
+        </div>
+    </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
