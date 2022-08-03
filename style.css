@@ -2,6 +2,7 @@ body::before {
     display: block;
     content: '';
     height: 60px;
+    cursor: url("./cur1164.ani"),url("./cur1164.gif"), default;
 }
 
 @media(min-width: 768px) {
@@ -17,3 +18,7 @@ body::before {
         padding-bottom: 30px;
         padding-left: 40px;
       }
+
+
+
+      /* Start https://www.cursors-4u.com */ * {cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.png), auto !important;} /* End https://www.cursors-4u.com */
